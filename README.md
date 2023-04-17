@@ -26,6 +26,7 @@ python label_studio/manage.py collectstatic
 python label_studio/manage.py runserver
 ```
 4. Navigate to http://localhost:8080/projects and login or create account.
+
 ![Screenshot of Label Studio login page.](https://github.com/aissitt/LabelStudioPipeline/blob/9b527506d1b9fad981ea17251de0443e70ceab31/LabelStudioLogin.png)
 5. Create a project by clicking on the "Create" button. The project will automatically be numbered. You can rename the project, but keep track of this number for later.
 ![Screenshot of Label Studio project default name and number.](https://github.com/aissitt/LabelStudioPipeline/blob/e2bb1021ff0720cdef1d15325b4c46c6478946c5/LabelStudioProject.png)
