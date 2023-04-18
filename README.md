@@ -63,6 +63,6 @@ splitfolders.ratio(input_folder, output=output_folder,
     2. Now, change the "nc" field to the number of classes you plan to train on. In this case, we have three.
     3. Finally, enter each class name in the "names" field.
     4. Place data.yaml in the same directory as your dataset.
-4. Change any paths in YOLOv5-Custom-Training.ipynb if you have used different foldder names/paths. Otherwise, run all cells in the file, and keep track of best.pt when it downloads.
+4. Change any paths in YOLOv5-Custom-Training.ipynb if you have used different folder names/paths. Otherwise, run all cells in the file, and keep track of best.pt when it downloads.
 ## Label Studio ML Backend Setup
 * Install Pytorch
