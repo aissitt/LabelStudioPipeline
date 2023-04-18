@@ -38,7 +38,7 @@ python label_studio/manage.py runserver
 ![Screenshot of Label Studio data import.](https://github.com/aissitt/LabelStudioPipeline/blob/e2bb1021ff0720cdef1d15325b4c46c6478946c5/UploadImages.png)
 ![Screenshot of Label Studio labeling formats.](https://github.com/aissitt/LabelStudioPipeline/blob/1386af21dc3d16034aaceb6bc5e6c096c970645c/LabelingFormat.png)
 
-5. Annotate about 20-30 representative frames, and export these annotations in YOLO format.
+5. Annotate about 20-30 representative frames, and export these annotations in YOLO format. In this case, we have annotated frames with three classes: boat, boat_partial, and boat_reflection.
 
 ![Screenshot of Label Studio sample annotation.](https://github.com/aissitt/LabelStudioPipeline/blob/1386af21dc3d16034aaceb6bc5e6c096c970645c/SampleAnnotation.png)
 
