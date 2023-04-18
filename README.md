@@ -59,3 +59,4 @@ splitfolders.ratio(input_folder, output=output_folder,
 ```
 2. Upload dataset to Google Drive. Here, we place it in a folder named "dataset".
 ## Label Studio ML Backend Setup
+* Install Pytorch
