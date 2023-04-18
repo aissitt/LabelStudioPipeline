@@ -57,4 +57,5 @@ python label_studio/manage.py runserver
 splitfolders.ratio(input_folder, output=output_folder,
     seed=1337, ratio=(.8, .1, .1), group_prefix=2, move=False)
 ```
+2. Upload dataset to Google Drive. Here, we place it in a folder named "dataset".
 ## Label Studio ML Backend Setup
