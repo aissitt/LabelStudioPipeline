@@ -126,7 +126,9 @@ This will be used to configure our backend in Label Studio.
 
 ![Screenshot of ML backend labeling settings.](/images/AssistedLabeling.png)
 
+
 14. Naviagate back to your project. Select all tasks, and select "Retreive Predictions" from the dropdown menu:
+
 ![Screenshot of prediction retreival.](/images/GetPredictions.png)
 
 15. Enable the "Prediction results" column to view results:
