@@ -27,22 +27,22 @@ python label_studio/manage.py runserver
 ```
 2. Navigate to http://localhost:8080/projects and login or create account.
 
-![Screenshot of Label Studio login page.](https://github.com/aissitt/LabelStudioPipeline/blob/9b527506d1b9fad981ea17251de0443e70ceab31/LabelStudioLogin.png)
+![Screenshot of Label Studio login page.](/LabelStudioLogin.png)
 
 3. Create a project by clicking on the "Create" button. The project will automatically be numbered. You can rename the project, but keep track of this number for later.
 
-![Screenshot of Label Studio project default name and number.](https://github.com/aissitt/LabelStudioPipeline/blob/e2bb1021ff0720cdef1d15325b4c46c6478946c5/LabelStudioProject.png)
+![Screenshot of Label Studio project default name and number.](/LabelStudioProject.png)
 
 4. Import the data you wish to annotate, and select the labeling format. Here we use bounding boxes and labels.
 
-![Screenshot of Label Studio data import.](https://github.com/aissitt/LabelStudioPipeline/blob/e2bb1021ff0720cdef1d15325b4c46c6478946c5/UploadImages.png)
-![Screenshot of Label Studio labeling formats.](https://github.com/aissitt/LabelStudioPipeline/blob/1386af21dc3d16034aaceb6bc5e6c096c970645c/LabelingFormat.png)
+![Screenshot of Label Studio data import.](/UploadImages.png)
+![Screenshot of Label Studio labeling formats.](/LabelingFormat.png)
 
 5. Annotate about 20-30 representative frames, and export these annotations in YOLO format. In this case, we have annotated frames with three classes: boat, boat_partial, and boat_reflection.
 
-![Screenshot of Label Studio sample annotation.](https://github.com/aissitt/LabelStudioPipeline/blob/1386af21dc3d16034aaceb6bc5e6c096c970645c/SampleAnnotation.png)
+![Screenshot of Label Studio sample annotation.](/SampleAnnotation.png)
 
-![Screenshot of Label Studio annotation forms.](https://github.com/aissitt/LabelStudioPipeline/blob/9b527506d1b9fad981ea17251de0443e70ceab31/AnnotationForms.png)
+![Screenshot of Label Studio annotation forms.](/AnnotationForms.png)
 
 ## YOLOv5 Setup
 * Now we train a YOLOv5 backbone using Google Colab 
@@ -67,6 +67,26 @@ splitfolders.ratio(input_folder, output=output_folder,
 ```
 !python train.py --img 416 --batch 16 --epochs 500 --data /content/drive/MyDrive/dataset/data.yaml --weights yolov5s.pt --cache
 ```
-Run all cells in the file, and keep track of best.pt when it downloads.
+5. Run all cells in the file, and keep track of best.pt when it downloads.
 ## Label Studio ML Backend Setup
-* Install Pytorch
+1. In a new command terminal, navigate to your environment directory, here we're using "labeldemo" and activate the environnment.
+2. Clone the YOLOv5 repository:
+```
+git clone https://github.com/ultralytics/yolov5/
+```
+3. Install the appropriate PyTorch version from https://pytorch.org/get-started/locally/ (torchaudio not needed):
+![Screenshot of PyTorch downloads.](/PyTorchVersions.png)
+5. Clone the Label Studio Machine Learning Backend git repository:
+```
+git clone https://github.com/heartexlabs/label-studio-ml-backend
+```
+5. Set up the environment:
+```
+cd label-studio-ml-backend
+
+# Install label-studio-ml and its dependencies
+pip install -U -e .
+
+# Install the dependencies for the example or your custom ML backend
+pip install -r path/to/my_ml_backend/requirements.txt
+```
