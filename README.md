@@ -45,5 +45,7 @@ python label_studio/manage.py runserver
 ![Screenshot of Label Studio annotation forms.](https://github.com/aissitt/LabelStudioPipeline/blob/9b527506d1b9fad981ea17251de0443e70ceab31/AnnotationForms.png)
 
 ## YOLOv5 Setup
-* Now we train a YOLOv5 backbone using Google Colab https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb
+* Now we train a YOLOv5 backbone using Google Colab 
+* The original custom training file is found here: https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb
+* Changes were made to the training file to better suite our needs. The updated file can be found here: https://colab.research.google.com/drive/1mwwkymB6cs_iEBMf0MfJJ8Y1UW5NPFiM?usp=sharing
 ## Label Studio ML Backend Setup
