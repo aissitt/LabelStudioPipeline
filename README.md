@@ -58,5 +58,10 @@ splitfolders.ratio(input_folder, output=output_folder,
     seed=1337, ratio=(.8, .1, .1), group_prefix=2, move=False)
 ```
 2. Upload dataset to Google Drive. Here, we place it in a folder named "dataset".
+3. Next, data.yaml needs to be configured. 
+3a. In the "train" field, enter the path to the "train" folder in your Drive. Insert corresponding paths for the "val" and "test" fields as well. 
+3b. Now, change the "nc" field to the number of classes you plan to train on. In this case, we have three.
+3c. Finally, enter each class name in the "names" field.
+3d. Place data.yaml in the same directory as your dataset.
 ## Label Studio ML Backend Setup
 * Install Pytorch
