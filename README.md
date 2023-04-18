@@ -102,3 +102,5 @@ pip install -r path/to/my_ml_backend/requirements.txt
       2. If this command fails due to this error message:
       ![Screenshot of error message.](/images/ErrorMessage.png)
       A new folder has populated with the name of your model, likely in label-studio/label-studio-ml-backend. Delete this folder, then run command again.
+      3. If this command executes successfully, you will receive a message like this:
+      ![Screenshot of success message for backend setup.](/images/BackendSuccess.png)
