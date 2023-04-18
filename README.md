@@ -46,8 +46,8 @@ python label_studio/manage.py runserver
 
 ## YOLOv5 Setup
 * Now we train a YOLOv5 backbone using Google Colab 
-* The original custom training file is found here: https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb
-* Changes were made to the training file to better suite our needs. The updated file can be found here: https://colab.research.google.com/drive/1mwwkymB6cs_iEBMf0MfJJ8Y1UW5NPFiM?usp=sharing
+* The original custom training file, YOLOv5-Custom-Training.ipynb, is found here: https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb
+* Changes were made to the training file to better suite our needs. The updated file, YOLOv5-Custom-Backbone-Training.ipynb, can be found here: https://colab.research.google.com/drive/1mwwkymB6cs_iEBMf0MfJJ8Y1UW5NPFiM?usp=sharing
 
 ### Prepare Dataset
 1. Using split.ipynb, define your desired ratios and split the annotations into test, train, and validation folders. Ratios are defined here:
@@ -63,6 +63,10 @@ splitfolders.ratio(input_folder, output=output_folder,
     2. Now, change the "nc" field to the number of classes you plan to train on. In this case, we have three.
     3. Finally, enter each class name in the "names" field.
     4. Place data.yaml in the same directory as your dataset.
-4. Change any paths in YOLOv5-Custom-Training.ipynb if you have used different folder names/paths. Otherwise, run all cells in the file, and keep track of best.pt when it downloads.
+4. Change any paths in YOLOv5-Custom-Backbone-Training.ipynb if you have used different folder names/paths. Set your desired number of epochs here:
+```
+!python train.py --img 416 --batch 16 --epochs 500 --data /content/drive/MyDrive/dataset/data.yaml --weights yolov5s.pt --cache
+```
+Run all cells in the file, and keep track of best.pt when it downloads.
 ## Label Studio ML Backend Setup
 * Install Pytorch
