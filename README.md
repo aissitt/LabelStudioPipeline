@@ -93,11 +93,11 @@ pip install -r path/to/my_ml_backend/requirements.txt
 6. Prepare ml.py. Fill in the capitialized fields with paths on your local machine.
 7. In file explorer, navigate to label-studio/label-studio-ml-backend/label_studio_ml/examples. Create a folder under "examples" with your desired name, here we use "boat". Place ml.py inside this folder.
 8. Back in command line, run the following (or substitute your model name for "boat" here):
-```
-label-studio-ml init boat --script label_studio_ml/examples/boat/ml.py
-```
+    ```
+    label-studio-ml init boat --script label_studio_ml/examples/boat/ml.py
+    ```
 
-   8-i. If this command fails due to missing dependancies, install them, then continue to 8-ii below.
-   8-ii. If this command fails due to this error message:
+   1. If this command fails due to missing dependancies, install them, then continue to 8-ii below.
+   2. If this command fails due to this error message:
    ![Screenshot of error message.](/images/ErrorMessage.png)
    A new folder has populated with the name of your model, likely in label-studio/label-studio-ml-backend. Delete this folder, then run command again.
