@@ -97,7 +97,7 @@ pip install -r path/to/my_ml_backend/requirements.txt
 label-studio-ml init boat --script label_studio_ml/examples/boat/ml.py
 ```
 
-   1. If this command fails due to missing dependancies, install them, then continue to 8-ii below.
-   2. If this command fails due to this error message:
+   8-i. If this command fails due to missing dependancies, install them, then continue to 8-ii below.
+   8-ii. If this command fails due to this error message:
    ![Screenshot of error message.](/images/ErrorMessage.png)
    A new folder has populated with the name of your model, likely in label-studio/label-studio-ml-backend. Delete this folder, then run command again.
