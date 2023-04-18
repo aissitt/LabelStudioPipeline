@@ -117,6 +117,7 @@ This will be used to configure our backend in Label Studio.
 12. Select the "Machine Learning" tab, then select "Add Model".
     1. Enter your model name, the url obtained earlier, and a description.
     2. Activate the slider to enable interactive preannotations. 
+    
     ![Screenshot of ML backend setup in Label Studio.](/images/mlSettings.png)
     3. Select "validate and Save".
 
