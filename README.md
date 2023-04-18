@@ -119,6 +119,7 @@ This will be used to configure our backend in Label Studio.
     2. Activate the slider to enable interactive preannotations. 
     ![Screenshot of ML backend setup in Label Studio.](/images/mlSettings.png)
     3. Select "validate and Save".
+
 13. Activate sliders for ML-Assisted Labeling:
 ![Screenshot of ML backend labeling settings.](/images/AssistedLabeling.png)
 
