@@ -128,8 +128,12 @@ This will be used to configure our backend in Label Studio.
 
 14. Naviagate back to your project. Select all tasks, and select "Retreive Predictions" from the dropdown menu:
 ![Screenshot of prediction retreival.](/images/GetPredictions.png)
+
 15. Enable the "Prediction results" column to view results:
+
 ![Screenshot of prediction retreival.](/images/ViewPredictions.png)
+
 16. Here are our predictions! The column with the purple icon shows the number of predictions that were generated for the frame, and the "Prediction results" column shows their locations.
+
 ![Screenshot of prediction retreival.](/images/Results.png)
 17. Now, all you have to do is "annotate" normally, but since the predictions are there, just confirm or edit the annotations and submit. This takes closer to ~5 seconds per frame vs. the original 20-30 seconds per frame.
