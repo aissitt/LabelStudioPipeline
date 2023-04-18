@@ -12,7 +12,7 @@ conda activate labeldemo
 ```
 
 ## Label Studio Setup
-1. Install from source as seen here https://labelstud.io/guide/install.html#Install-from-source :
+1. Install from source as seen here https://labelstud.io/guide/install.html#Install-from-source:
 ```
 git clone https://github.com/heartexlabs/label-studio.git
 cd label-studio
