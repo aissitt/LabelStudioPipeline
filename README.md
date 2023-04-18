@@ -48,4 +48,13 @@ python label_studio/manage.py runserver
 * Now we train a YOLOv5 backbone using Google Colab 
 * The original custom training file is found here: https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb
 * Changes were made to the training file to better suite our needs. The updated file can be found here: https://colab.research.google.com/drive/1mwwkymB6cs_iEBMf0MfJJ8Y1UW5NPFiM?usp=sharing
+
+### Prepare Dataset
+8. Using split.ipynb, define your desired ratios and split the annotations into test, train, and validation folders. Ratios are defined here:
+```
+# Split with a ratio
+# Group prefix is 2 to capture image and annotation files for each
+splitfolders.ratio(input_folder, output=output_folder,
+    seed=1337, ratio=(.8, .1, .1), group_prefix=2, move=False)
+```
 ## Label Studio ML Backend Setup
