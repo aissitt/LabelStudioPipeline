@@ -104,3 +104,19 @@ pip install -r path/to/my_ml_backend/requirements.txt
       A new folder has populated with the name of your model, likely in label-studio/label-studio-ml-backend. Delete this folder, then run command again.
       3. If this command executes successfully, you will receive a message like this:
       ![Screenshot of success message for backend setup.](/images/BackendSuccess.png)
+10. Start your backend:
+```
+label-studio-ml start .\boat
+```
+Take note of the url at the bottom:
+![Screenshot of backend details.](/images/BackendRunning.png)
+This will be used to configure our backend in Label Studio.
+11. Navigate to the settings page for your Label Studio project. 
+12. Select the "Machine Learning" tab, then select "Add Model".
+    1. Enter your model name, the url obtained earlier, and a description.
+    2. Activate the slider to enable interactive preannotations. 
+    ![Screenshot of ML backend setup in Label Studio.](/images/mlSettings.png)
+    3. Select "validate and Save".
+13. Activate sliders for ML-Assisted Labeling:
+![Screenshot of ML backend labeling settings.](/images/AssistedLabeling.png)
+
