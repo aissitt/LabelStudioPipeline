@@ -74,13 +74,14 @@ splitfolders.ratio(input_folder, output=output_folder,
 ```
 git clone https://github.com/ultralytics/yolov5/
 ```
-3. Install the appropriate PyTorch version from https://pytorch.org/get-started/locally/ (torchaudio not needed):
+3. Create a folder under "labeldemo" with the name of your model, in this case "boat", and place the best.pt inside.
+4. Install the appropriate PyTorch version from https://pytorch.org/get-started/locally/ (torchaudio not needed):
 ![Screenshot of PyTorch downloads.](/images/PyTorchVersions.png)
-4. Clone the Label Studio Machine Learning Backend git repository:
+5. Clone the Label Studio Machine Learning Backend git repository:
 ```
 git clone https://github.com/heartexlabs/label-studio-ml-backend
 ```
-5. Set up the environment:
+6. Set up the environment:
 ```
 cd label-studio-ml-backend
 
@@ -90,14 +91,14 @@ pip install -U -e .
 # Install the dependencies for the example or your custom ML backend
 pip install -r path/to/my_ml_backend/requirements.txt
 ```
-6. Prepare ml.py. Fill in the capitialized fields with paths on your local machine.
-7. In file explorer, navigate to label-studio/label-studio-ml-backend/label_studio_ml/examples. Create a folder under "examples" with your desired name, here we use "boat". Place ml.py inside this folder.
-8. Back in command line, run the following (or substitute your model name for "boat" here):
+7. Prepare ml.py. Fill in the capitialized fields with paths on your local machine.
+8. In file explorer, navigate to label-studio/label-studio-ml-backend/label_studio_ml/examples. Create a folder under "examples" with your desired name, here we use "boat". Place ml.py inside this folder.
+9. Back in command line, run the following (or substitute your model name for "boat" here):
     ```
     label-studio-ml init boat --script label_studio_ml/examples/boat/ml.py
     ```
 
-      1. If this command fails due to missing dependancies, install them, then continue to 8-ii below.
+      1. If this command fails due to missing dependancies, install them, then continue to 9-ii below.
       2. If this command fails due to this error message:
       ![Screenshot of error message.](/images/ErrorMessage.png)
       A new folder has populated with the name of your model, likely in label-studio/label-studio-ml-backend. Delete this folder, then run command again.
