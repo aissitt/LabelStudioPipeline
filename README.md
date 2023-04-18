@@ -68,6 +68,7 @@ splitfolders.ratio(input_folder, output=output_folder,
 !python train.py --img 416 --batch 16 --epochs 500 --data /content/drive/MyDrive/dataset/data.yaml --weights yolov5s.pt --cache
 ```
 5. Run all cells in the file, and keep track of best.pt when it downloads.
+
 ## Label Studio ML Backend Setup
 1. In a new command terminal, navigate to your environment directory, here we're using "labeldemo" and activate the environnment.
 2. Clone the YOLOv5 repository:
@@ -90,3 +91,6 @@ pip install -U -e .
 # Install the dependencies for the example or your custom ML backend
 pip install -r path/to/my_ml_backend/requirements.txt
 ```
+
+## Integrate with Label-Studio
+*label map
